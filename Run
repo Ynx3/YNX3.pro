@@ -1,11 +1,12 @@
+#!/usr/bin/env bash 
 
-#!/bin/bash 
 
-# ¦ Dev : @Ynx3man
-# ¦ Dev : @mmm4d
-# ¦ Source Ynx3 BY @Ynx3man
+#¦ Dev @mmm4d
+#¦ Dev @Ynx3man
+#¦ Source YNX3 BY @Ynx3man
 #---------------------------------------------------------------------
 cd $(cd $(dirname $0); pwd)
+ 
 RED='\033[0;31m'
 SMAY='\033[0;36m' 
 GREEN='\033[0;32m'
@@ -18,14 +19,13 @@ Version=`lsb_release -rs | cut -f1 -d"."`
 
 if [ "$Version" == "18" ];then
 echo -e "${GREEN}
- ¦ Dev : @Ynx3man
- ¦ Dev : @mmm4d
- ¦ Source Ynx3
- ¦ BY @Ynx3man
- ---------------------------------------------------------------------${CNIL}"
+¦ Dev @mmm4d
+¦ Dev @Ynx3man
+¦ Source YNX3 BY @Ynx3man
+----------------------------------------------------------------------${CNIL}"
 echo -e "${RED}| للاسف لايمكنك تنصيب السورس ع نظام اوبنتو {${Version}} يجب ان يكون على اصدار  اقل مثلا  ${SMAY}14 او 16
 ${CNIL}";
-echo -e "${RED}| Sorry Canot install Source on Ubuntu {${Version}} Please install system To Ubuntu ${SMAY}14 or 16 ${RED} For Run The Source Ynx3 
+echo -e "${RED}| Sorry Canot install Source on Ubuntu {${Version}} Please install system To Ubuntu ${SMAY}14 or 16 ${RED} For Run The Source YNX3 
 ${CNIL}";
 exit;
 fi
@@ -35,7 +35,7 @@ if [ ! -f "./TG" ]; then
 echo -e "${RED}
 ¦
 ¦ CAUTION:${WHITB} Your Not Dwonload TG .
-¦ NOW I Run File ${Yellow}./run${WHITB} To install ${SMAY}Source Ynx3${CNIL} . \n
+¦ NOW I Run File ${Yellow}./run${WHITB} To install ${SMAY}Source YNX3${CNIL} . \n
 \n\n"
 chmod +x ./ins
 ./ins
@@ -50,31 +50,23 @@ echo -e "${RED}
 \n\n"
 lua ./inc/Run.lua
 exit;
-else
+fi
+
+
 TOKEN=`cat ./inc/Token.txt`
-BOTID=`echo $TOKEN | cut -f1 -d":"`
-Sudo=$(redis-cli get ${BOTID}:SUDO_ID:)
-if [[ $Sudo == "" ]]; then
-rm -fr ./inc/Token.txt
-lua ./inc/Run.lua
-exit;
-fi
-fi
+sudo chmod +x ./TG
 
-
-chmod +x ./TG  
-
-if [ "$1" == "R" ]; then
-while true; do
-sleep 1s
-sudo rm -fr ~/.telegram-cli
-./TG -s ./inc/Run.lua --bot=$TOKEN
+if [ "$1" == "R" ] ; then
+while(true) do
+killall -q ./TG
+sudo rm -fr ../.telegram-cli
+./TG -s inc/Run.lua --bot=$TOKEN
 done
-else 
-if ! screen -list | grep -q "ynx3"; then
-screen -S ynx3 ./run R
 else
-screen -X -S ynx3 quit
-screen -S ynx3 ./run R
+
+if ! screen -list | grep -q "ynx"; then
+screen -S ynx ./run R
 fi
+screen -S ynx -X kill
+screen -S ynx ./run R
 fi
