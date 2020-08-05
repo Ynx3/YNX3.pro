@@ -1,13 +1,8 @@
 
 --[[
-#    ▀█████████▄   ▄██████▄     ▄████████    ▄████████
-#      ███    ███ ███    ███   ███    ███   ███    ███
-#      ███    ███ ███    ███   ███    █▀    ███    █▀
-#     ▄███▄▄▄██▀  ███    ███   ███          ███
-#    ▀▀███▀▀▀██▄  ███    ███ ▀███████████ ▀███████████ ¦ Dev : @TH3BOSS
-#      ███    ██▄ ███    ███          ███          ███ ¦ Dev : @OMMMM
-#      ███    ███ ███    ███    ▄█    ███    ▄█    ███
-#    ▄█████████▀   ▀██████▀   ▄████████▀   ▄████████▀  ¦ Source TH3BOSS BY @TH3BS
+#¦ Dev : @Ynx3man
+#¦ Dev : @mmm4d
+#¦ Source Ynx3 BY @Ynx3man
 #---------------------------------------------------------------------
 ]]
 local function iBoss(msg,MsgText)
@@ -2964,7 +2959,7 @@ end
 
 
 if MsgText[1] == 'اصدار السورس' or MsgText[1] == 'الاصدار' then
-return '👨🏾‍🔧¦ اصدار سورس الزعيم : *v'..version..'* \n📡'
+return '👨🏾‍🔧¦ اصدار سورس ينكس : *v'..version..'* \n📡'
 end
 
 if (MsgText[1] == 'تحديث السورس' or MsgText[1] == 'تحديث السورس ™') then
@@ -3036,8 +3031,8 @@ end
 if (MsgText[1]== "ايدي" or MsgText[1]=="ايدي 🆔") and msg.type == "pv" then return  "\n"..msg.sender_user_id_.."\n"  end
 
 if MsgText[1]== "قناة السورس 📡" and msg.type == "pv" then
-local inline = {{{text="قنآهہ‏‏ آلسـورس : الـزعـيـم 🍃",url="t.me/th3bs"}}}
-send_key(msg.sender_user_id_,'  [قناة السورس : الـزعـيـم](t.me/th3bs)',nil,inline,msg.id_)
+local inline = {{{text="قنآهہ‏‏ آلسـورس : ينكس 🍃",url="t.me/ynx3info"}}}
+send_key(msg.sender_user_id_,'  [قناة السورس : ينكس](t.me/ynx3info)',nil,inline,msg.id_)
 return false
 end
 
@@ -3554,16 +3549,16 @@ end
 
 if MsgText[1] == "سورس" or MsgText[1]=="السورس" then
 return [[
-Welcome To Source BoSs 
-🌐┇BOSS TEAM 
+Welcome To Source Ynx3 
+🌐┇Soure Ynx3
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📬┇ [Source Channel](https://t.me/TH3BS)
-📊┇ [Source Install](https://t.me/TH3BS/4121)
+📬┇ [Source Channel](https://t.me/ynx3info)
+📊┇ [Source Install](https://t.me/ynx3info)
 🆔┇ [Changing ID Channel](https://t.me/Change_id/1)
-📋┇ [Explanation Channel](https://t.me/SourceBoss/1)
+📋┇ [Explanation Channel](https://t.me/ynx3info)
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-📮┇ [Source Programmer](https://t.me/TH3BOSS)
-♻️┇ [Twasl Bot Programmer](https://t.me/TH3BOSSBOT)
+📮┇ [Source Programmer](https://t.me/ynx3info)
+♻️┇ [Twasl Bot Programmer](https://t.me/ynx3man)
 ]]
 end
 
