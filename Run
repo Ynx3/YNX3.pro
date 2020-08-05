@@ -71,10 +71,10 @@ sudo rm -fr ~/.telegram-cli
 ./TG -s ./inc/Run.lua --bot=$TOKEN
 done
 else 
-if ! screen -list | grep -q "boss"; then
-screen -S boss ./run R
+if ! screen -list | grep -q "ynx3"; then
+screen -S ynx3 ./run R
 else
-screen -X -S boss quit
-screen -S boss ./run R
+screen -X -S ynx3 quit
+screen -S ynx3 ./run R
 fi
 fi
