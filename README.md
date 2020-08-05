@@ -1,6 +1,6 @@
 @@ -1 +1,18 @@
  # YNX3
- # <p align="center" style="color:#cb3349" > [<< Source Boss >> (Final Version)](https://telegram.me/YNX3PRO)
+ # <p align="center" style="color:#cb3349" > [<< Source Ynx3 >> (Final Version)](https://telegram.me/YNX3PRO)
 
   <p align="center" style="color: #14635c;" > سورس ينكس الافضل لحمايه المجموعات في التلقرام
 
