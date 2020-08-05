@@ -8,7 +8,7 @@
 
  # <p align="center" style="color: #14635c;" > تنصبه بكود واحد
  ```sh
- git clone https://github.com/Ynx3/YNX3.pro ;cd Ynx3;chmod +x ins;./ins
+ git clone https://github.com/Ynx3/YNX3.pro ;cd YNX3.pro;chmod +x ins;./ins
  ```
 
 
