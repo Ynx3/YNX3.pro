@@ -1,14 +1,9 @@
 
 #!/bin/bash 
 
-#    ▀█████████▄   ▄██████▄     ▄████████    ▄████████
-#      ███    ███ ███    ███   ███    ███   ███    ███
-#      ███    ███ ███    ███   ███    █▀    ███    █▀
-#     ▄███▄▄▄██▀  ███    ███   ███          ███
-#    ▀▀███▀▀▀██▄  ███    ███ ▀███████████ ▀███████████ ¦ Dev : @TH3BOSS
-#      ███    ██▄ ███    ███          ███          ███ ¦ Dev : @OMMMM
-#      ███    ███ ███    ███    ▄█    ███    ▄█    ███
-#    ▄█████████▀   ▀██████▀   ▄████████▀   ▄████████▀  ¦ Source TH3BOSS BY @TH3BS
+# ¦ Dev : @Ynx3man
+# ¦ Dev : @mmm4d
+# ¦ Source Ynx3 BY @Ynx3man
 #---------------------------------------------------------------------
 cd $(cd $(dirname $0); pwd)
 RED='\033[0;31m'
@@ -23,18 +18,14 @@ Version=`lsb_release -rs | cut -f1 -d"."`
 
 if [ "$Version" == "18" ];then
 echo -e "${GREEN}
- ▀█████████▄   ▄██████▄     ▄████████    ▄████████
-   ███    ███ ███    ███   ███    ███   ███    ███
-   ███    ███ ███    ███   ███    █▀    ███    █▀
-  ▄███▄▄▄██▀  ███    ███   ███          ███
- ▀▀███▀▀▀██▄  ███    ███ ▀███████████ ▀███████████ ¦ Dev : @TH3BOSS
-   ███    ██▄ ███    ███          ███          ███ ¦ Dev : @OMMMM
-   ███    ███ ███    ███    ▄█    ███    ▄█    ███ ¦ Source TH3BOSS
- ▄█████████▀   ▀██████▀   ▄████████▀   ▄████████▀  ¦ BY @TH3BS
+ ¦ Dev : @Ynx3man
+ ¦ Dev : @mmm4d
+ ¦ Source Ynx3
+ ¦ BY @Ynx3man
  ---------------------------------------------------------------------${CNIL}"
 echo -e "${RED}| للاسف لايمكنك تنصيب السورس ع نظام اوبنتو {${Version}} يجب ان يكون على اصدار  اقل مثلا  ${SMAY}14 او 16
 ${CNIL}";
-echo -e "${RED}| Sorry Canot install Source on Ubuntu {${Version}} Please install system To Ubuntu ${SMAY}14 or 16 ${RED} For Run The Source Th3Boss 
+echo -e "${RED}| Sorry Canot install Source on Ubuntu {${Version}} Please install system To Ubuntu ${SMAY}14 or 16 ${RED} For Run The Source Ynx3 
 ${CNIL}";
 exit;
 fi
@@ -44,7 +35,7 @@ if [ ! -f "./TG" ]; then
 echo -e "${RED}
 ¦
 ¦ CAUTION:${WHITB} Your Not Dwonload TG .
-¦ NOW I Run File ${Yellow}./run${WHITB} To install ${SMAY}Source TH3BOSS${CNIL} . \n
+¦ NOW I Run File ${Yellow}./run${WHITB} To install ${SMAY}Source Ynx3${CNIL} . \n
 \n\n"
 chmod +x ./ins
 ./ins
